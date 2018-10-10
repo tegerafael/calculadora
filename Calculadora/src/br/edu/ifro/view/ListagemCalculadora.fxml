@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.cell.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.control.ListagemCalculadoraController">
+   <children>
+      <TableView fx:id="tbCalculadora" layoutX="33.0" layoutY="58.0" prefHeight="293.0" prefWidth="533.0">
+        <columns>
+          <TableColumn prefWidth="129.0" text="Primeiro Valor">
+              <cellValueFactory>
+                  <PropertyValueFactory property="primeiroValor" />
+                </cellValueFactory>
+          </TableColumn>
+          <TableColumn minWidth="0.0" prefWidth="150.0" text="Segundo Valor">
+              <cellValueFactory>
+                  <PropertyValueFactory property="segundoValor" />
+                </cellValueFactory>
+          </TableColumn>
+            <TableColumn minWidth="0.0" prefWidth="109.0" text="Operador">
+                <cellValueFactory>
+                  <PropertyValueFactory property="operador" />
+                </cellValueFactory>
+          </TableColumn>
+            <TableColumn minWidth="0.0" prefWidth="143.0" text="Resultado">
+                <cellValueFactory>
+                  <PropertyValueFactory property="resultado" />
+                </cellValueFactory>
+          </TableColumn>
+        </columns>
+      </TableView>
+      <Button fx:id="btnFechar" layoutX="274.0" layoutY="361.0" mnemonicParsing="false" onAction="#fechar" text="Fechar" />
+   </children>
+</AnchorPane>

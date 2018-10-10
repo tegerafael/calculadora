@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="246.0" prefWidth="401.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.control.CadastroLoginController">
+   <children>
+      <Label layoutX="62.0" layoutY="56.0" text="Usuário" />
+      <Label layoutX="62.0" layoutY="97.0" text="Senha" />
+      <Label layoutX="62.0" layoutY="142.0" text="Confimar Senha" />
+      <TextField fx:id="txtUsuario" layoutX="167.0" layoutY="52.0" />
+      <PasswordField fx:id="txtSenha" layoutX="167.0" layoutY="93.0" />
+      <PasswordField fx:id="txtSenha2" layoutX="167.0" layoutY="138.0" onKeyPressed="#onEnter" />
+      <Button layoutX="61.0" layoutY="195.0" mnemonicParsing="false" onAction="#salvar" prefHeight="42.0" prefWidth="85.0" style="-fx-background-color: #90EE90;" text="        Salvar" textFill="BLACK" />
+      <Button layoutX="165.0" layoutY="195.0" mnemonicParsing="false" onAction="#limpar" prefHeight="42.0" prefWidth="85.0" style="-fx-background-color: #FAFAD2;" text="       Limpar" textFill="BLACK" />
+      <Button fx:id="btnCancelar" layoutX="268.0" layoutY="195.0" mnemonicParsing="false" onAction="#cancelar" prefHeight="42.0" prefWidth="85.0" style="-fx-background-color: #FFA07A;" text="       Cancelar" textFill="BLACK" />
+   </children>
+</AnchorPane>
